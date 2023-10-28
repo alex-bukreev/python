@@ -31,5 +31,6 @@
     print(s[2])
     print(s[-2])
     t = s + 'еёжз'
+    print(t)
     print(t[8])
     
