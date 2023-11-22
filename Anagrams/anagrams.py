@@ -1,6 +1,6 @@
 import pgzrun
 import random
-import numpy as np
+import numpy
 WIDTH = 680
 HEIGHT = 300
 words = ['НУЛЬ','АРБУЗ','ЛОШАДЬ','КОРОВА','КНОПКА','ТЕЛЕГА','ИГРОК','ЛОЖКА','ДЕРЕВО']
@@ -9,7 +9,7 @@ words = ['НУЛЬ','АРБУЗ','ЛОШАДЬ','КОРОВА','КНОПКА','�
 def restart():
 	global a,b,win,timer,word
 	word = random.choice(words)
-	a = list(np.random.permutation(list(word)))
+	a = list(numpy.random.permutation(list(word)))
 	b = []
 	win = False
 	timer = 0
